@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#234b3b">
+<meta name="description" content="Formulário com validação HTML5 e armazenamento local.">
+<title>Contato | Folha</title>
+<link rel="icon" type="image/svg+xml" href="img/folha-mark.svg">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="site-header navbar">
+<div class="container header-row">
+<a class="brand" href="index.html" aria-label="Folha - página inicial"><img src="img/folha-mark.svg" alt=""><span>folha<span style="color:#df9a72">.</span></span></a>
+<button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="navegacao" aria-expanded="false">Menu ☰</button>
+<nav class="main-nav navbar-nav" id="navegacao" aria-label="Navegação principal"><a class="nav-link " href="index.html" >Início</a><a class="nav-link " href="plantas.html" >Plantas</a><a class="nav-link " href="guia.html" >Guia</a><a class="nav-link " href="rega.html" >Rega</a><a class="nav-link " href="meu-jardim.html" >Jardim</a><a class="nav-link " href="biblioteca.html" >Biblioteca</a><a class="nav-link" href="https://www.rhs.org.uk/plants" target="_blank" rel="noopener noreferrer" title="Conteúdo externo: requer internet">RHS ↗</a><a class="mobile-fav" href="favoritos.html">♡ Favoritos</a></nav>
+<a class="nav-cta" href="favoritos.html" aria-label="Abrir favoritos">♡ Favoritos</a>
+</div></header>
+<div id="aviso-global" class="container notice" hidden role="status" style="margin-top:15px"></div>
+<main id="conteudo"><section class="page-intro"><div class="container"><span class="eyebrow">Vamos conversar</span><h1>Fale com o Folha</h1><p>Tem uma sugestão de melhoria ou uma dúvida sobre o projeto? Preencha o formulário abaixo para registrar uma mensagem de teste.</p></div></section>
+<section class="section" style="padding-top:7px"><div class="container"><div class="two-col"><form class="form-card" id="form-contato"><div class="form-grid"><div class="field"><label for="nome">Seu nome</label><input class="form-control" type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}" title="Use pelo menos 3 letras, sem números" required></div><div class="field"><label for="email">Seu e-mail</label><input class="form-control" type="email" id="email" name="email" placeholder="voce@exemplo.com" required></div></div><div class="field"><label for="assunto">Assunto</label><select class="form-select" id="assunto" name="assunto" required><option value="" selected disabled>Escolha uma opção</option><option>Sugestão</option><option>Dúvida</option><option>Problema no site</option><option>Outro assunto</option></select></div><div class="field"><label for="mensagem">Sua mensagem</label><textarea class="form-control" id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." minlength="10" required></textarea><small>Mínimo de 10 caracteres.</small></div><button type="submit" class="btn btn-primary">Salvar mensagem</button><div class="alert alert-success success" id="sucesso-contato" role="status" style="margin-top:18px" hidden></div><p class="small muted" style="margin-top:14px;margin-bottom:0">Formulário demonstrativo: as mensagens são guardadas apenas neste navegador. Nenhum e-mail é enviado.</p></form><div><span class="eyebrow">Seu retorno importa</span><h2>Cada sugestão ajuda a melhorar.</h2><p class="lead">Use este formulário para testar campos, validações e salvamento local. A confirmação aparece assim que uma mensagem válida é registrada.</p><div class="paper-card"><span class="eyebrow">Neste dispositivo</span><div class="counter" id="numero-mensagens">0</div><p>mensagens de teste salvas localmente</p><hr style="border:0;border-top:1px solid #e7ebe6;margin:20px 0"><h3>O que acontece ao enviar?</h3><p>A página verifica os campos obrigatórios e armazena a mensagem no navegador. Não existe envio para um servidor.</p></div></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><img src="img/folha-mark.svg" alt="">folha.</a><p>Um lugar para descobrir plantas, aprender o básico e acompanhar seus cuidados sem complicação.</p></div><div><h4>Explorar</h4><div class="footer-links"><a href="index.html">Página inicial</a><a href="plantas.html">Explorar plantas</a><a href="galeria.html">Galeria</a><a href="planta.html">Ficha de planta</a></div></div><div><h4>Aprender</h4><div class="footer-links"><a href="guia.html">Guia para começar</a><a href="rega.html">Calculadora de rega</a><a href="biblioteca.html">Biblioteca</a><a href="agenda.html">Agenda de regas</a></div></div><div><h4>Organizar</h4><div class="footer-links"><a href="meu-jardim.html">Jardim</a><a href="favoritos.html">Favoritos</a><a href="sobre.html">Sobre o projeto</a><a href="contato.html">Contato</a></div></div></div><div class="footer-bottom"><span>Folha · Projeto de Desenvolvimento Front-End</span><span>Feito para funcionar também sem conexão.</span></div></div></footer>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#234b3b">
+<meta name="description" content="Catálogo com filtros de plantas, níveis de cuidado e luminosidade.">
+<title>Explore as plantas | Folha</title>
+<link rel="icon" type="image/svg+xml" href="img/folha-mark.svg">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="site-header navbar">
+<div class="container header-row">
+<a class="brand" href="index.html" aria-label="Folha - página inicial"><img src="img/folha-mark.svg" alt=""><span>folha<span style="color:#df9a72">.</span></span></a>
+<button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="navegacao" aria-expanded="false">Menu ☰</button>
+<nav class="main-nav navbar-nav" id="navegacao" aria-label="Navegação principal"><a class="nav-link " href="index.html" >Início</a><a class="nav-link active" href="plantas.html" aria-current="page">Plantas</a><a class="nav-link " href="guia.html" >Guia</a><a class="nav-link " href="rega.html" >Rega</a><a class="nav-link " href="meu-jardim.html" >Jardim</a><a class="nav-link " href="biblioteca.html" >Biblioteca</a><a class="nav-link" href="https://www.rhs.org.uk/plants" target="_blank" rel="noopener noreferrer" title="Conteúdo externo: requer internet">RHS ↗</a><a class="mobile-fav" href="favoritos.html">♡ Favoritos</a></nav>
+<a class="nav-cta" href="favoritos.html" aria-label="Abrir favoritos">♡ Favoritos</a>
+</div></header>
+<div id="aviso-global" class="container notice" hidden role="status" style="margin-top:15px"></div>
+<main id="conteudo"><section class="page-intro"><div class="container"><span class="eyebrow">Explore e descubra</span><h1>Encontre sua próxima planta</h1><p>Use os filtros para descobrir espécies que combinam com seu espaço e com o tempo que você tem para cuidar.</p></div></section>
+<section class="section" style="padding-top:8px"><div class="container"><div class="filter-panel"><div><label for="busca-planta">Buscar pelo nome</label><input id="busca-planta" class="form-control" type="search" placeholder="Ex.: jiboia, maranta..."></div><div><label for="filtro-luz">Iluminação</label><select id="filtro-luz" class="form-select"><option value="todas">Todas</option><option>Indireta</option><option>Meia-sombra</option><option>Sol</option><option>Sol suave</option><option>Variada</option></select></div><div><label for="filtro-nivel">Nível de cuidado</label><select id="filtro-nivel" class="form-select"><option value="todos">Todos</option><option>Fácil</option><option>Intermediário</option></select></div><div><label for="ordenacao">Organizar</label><select id="ordenacao" class="form-select"><option value="original">Destaques</option><option value="alfabetica">Nome A–Z</option><option value="rega">Rega mais frequente</option></select></div></div><div class="result-line"><span id="total-plantas">Carregando plantas...</span><span>12 espécies ilustradas</span></div><div class="bento" id="resultado-plantas" aria-live="polite"></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><img src="img/folha-mark.svg" alt="">folha.</a><p>Um lugar para descobrir plantas, aprender o básico e acompanhar seus cuidados sem complicação.</p></div><div><h4>Explorar</h4><div class="footer-links"><a href="index.html">Página inicial</a><a href="plantas.html">Explorar plantas</a><a href="galeria.html">Galeria</a><a href="planta.html">Ficha de planta</a></div></div><div><h4>Aprender</h4><div class="footer-links"><a href="guia.html">Guia para começar</a><a href="rega.html">Calculadora de rega</a><a href="biblioteca.html">Biblioteca</a><a href="agenda.html">Agenda de regas</a></div></div><div><h4>Organizar</h4><div class="footer-links"><a href="meu-jardim.html">Jardim</a><a href="favoritos.html">Favoritos</a><a href="sobre.html">Sobre o projeto</a><a href="contato.html">Contato</a></div></div></div><div class="footer-bottom"><span>Folha · Projeto de Desenvolvimento Front-End</span><span>Feito para funcionar também sem conexão.</span></div></div></footer>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

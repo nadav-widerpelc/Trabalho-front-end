@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#234b3b">
+<meta name="description" content="Calculadora educativa de intervalos iniciais de rega.">
+<title>Calculadora de rega | Folha</title>
+<link rel="icon" type="image/svg+xml" href="img/folha-mark.svg">
+
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="site-header ">
+<div class="container header-row">
+<a class="brand" href="index.html" aria-label="Folha - página inicial"><img src="img/folha-mark.svg" alt=""><span>folha<span style="color:#df9a72">.</span></span></a>
+<button class="nav-toggle" type="button" aria-label="Abrir menu" aria-controls="navegacao" aria-expanded="false">Menu ☰</button>
+<nav class="main-nav " id="navegacao" aria-label="Navegação principal"><a class="nav-link " href="index.html" >Início</a><a class="nav-link " href="plantas.html" >Plantas</a><a class="nav-link " href="guia.html" >Guia</a><a class="nav-link active" href="rega.html" aria-current="page">Rega</a><a class="nav-link " href="meu-jardim.html" >Jardim</a><a class="nav-link " href="biblioteca.html" >Biblioteca</a><a class="nav-link" href="https://www.rhs.org.uk/plants" target="_blank" rel="noopener noreferrer" title="Conteúdo externo: requer internet">RHS ↗</a><a class="mobile-fav" href="favoritos.html">♡ Favoritos</a></nav>
+<a class="nav-cta" href="favoritos.html" aria-label="Abrir favoritos">♡ Favoritos</a>
+</div></header>
+<div id="aviso-global" class="container notice" hidden role="status" style="margin-top:15px"></div>
+<main id="conteudo"><section class="page-intro"><div class="container"><span class="eyebrow">Ferramenta prática</span><h1>Quando verificar a rega?</h1><p>Preencha três informações e obtenha um intervalo inicial para conferir a umidade da terra. Não é uma data obrigatória para regar.</p></div></section>
+<section class="section" style="padding-top:5px"><div class="container"><div class="calculator"><form id="form-calculo" class="form-card"><h3 style="margin-bottom:24px">Conte um pouco sobre sua planta</h3><div class="field"><label for="tipo-planta">Tipo de planta</label><select id="tipo-planta" required><option value="folhagem">Folhagem tropical</option><option value="suculenta">Suculenta</option><option value="cacto">Cacto</option><option value="samambaia">Samambaia</option></select></div><div class="field"><label for="tamanho-vaso">Tamanho do vaso</label><select id="tamanho-vaso"><option value="pequeno">Pequeno</option><option value="medio" selected>Médio</option><option value="grande">Grande</option></select></div><div class="field"><label for="clima">Como está o clima?</label><select id="clima"><option value="quente">Quente e seco</option><option value="ameno" selected>Ameno</option><option value="frio">Frio e úmido</option></select></div><button type="submit" class="btn btn-primary" style="width:100%">Calcular intervalo</button></form><div class="calc-output" id="caixa-resultado"><span class="eyebrow" style="color:#b6d3b3">Resultado estimado</span><p style="margin:3px 0 9px">Verifique a umidade a cada</p><div id="dias-resultado" class="calc-number">7 dias</div><p id="explicacao-resultado" style="margin-top:22px">Este é apenas um lembrete de verificação. Sempre observe a terra antes de colocar água.</p></div></div><div class="notice warn" style="margin-top:18px">Importante: esta ferramenta usa valores didáticos aproximados e não mede a umidade real do solo. Se o substrato ainda estiver úmido, espere.</div></div></section>
+<section class="section section-soft"><div class="container"><div class="section-head"><div><span class="eyebrow">Dica útil</span><h2>Três sinais para observar</h2></div></div><div class="flow-steps"><div class="flow-step"><strong>01</strong><h3>Peso do vaso</h3><p class="muted small">Alguns vasos ficam mais leves conforme a água evapora.</p></div><div class="flow-step"><strong>02</strong><h3>Umidade da terra</h3><p class="muted small">Toque a superfície e, quando possível, observe um pouco mais abaixo.</p></div><div class="flow-step"><strong>03</strong><h3>Folhas e ambiente</h3><p class="muted small">Calor, vento e mudanças na aparência também influenciam a rotina.</p></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><img src="img/folha-mark.svg" alt="">folha.</a><p>Um lugar para descobrir plantas, aprender o básico e acompanhar seus cuidados sem complicação.</p></div><div><h4>Explorar</h4><div class="footer-links"><a href="index.html">Página inicial</a><a href="plantas.html">Explorar plantas</a><a href="galeria.html">Galeria</a><a href="planta.html">Ficha de planta</a></div></div><div><h4>Aprender</h4><div class="footer-links"><a href="guia.html">Guia para começar</a><a href="rega.html">Calculadora de rega</a><a href="biblioteca.html">Biblioteca</a><a href="agenda.html">Agenda de regas</a></div></div><div><h4>Organizar</h4><div class="footer-links"><a href="meu-jardim.html">Jardim</a><a href="favoritos.html">Favoritos</a><a href="sobre.html">Sobre o projeto</a><a href="contato.html">Contato</a></div></div></div><div class="footer-bottom"><span>Folha · Projeto de Desenvolvimento Front-End</span><span>Feito para funcionar também sem conexão.</span></div></div></footer>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
